@@ -4,8 +4,8 @@
 
 ## Technologies Used 💻
 
-**Frontend**: React, Typescript, Tailwind CSS, Styled-Components
-<br />**Backend**: Node.js, NestJS, Express.js, GraphQL
+**Frontend**: React, Typescript, Tailwind CSS, Styled-Components, GraphQL
+<br />**Backend**: Node.js, NestJS, Express.js, Docker
 
 ## How to Setup and Run Locally 🏃‍♂️🏃‍♀️
 
