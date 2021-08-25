@@ -1,6 +1,6 @@
 # MERN stack web application (React & NestJS)
 
-> A full-stack application that serves as a car rental
+> A full-stack application that serves as a website for a car rental service
 
 ## Technologies Used 💻
 
