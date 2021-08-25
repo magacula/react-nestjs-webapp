@@ -1,8 +1,11 @@
 # MERN stack web application (React & Nest.js)
 
-> A full-stack application built with:
-> <br />**Frontend**: React, Typescript, Tailwind CSS, Styled-Components
-> <br />**Backend**: Node.js, NestJS, Express.js, GraphQL
+> A full-stack application that serves as a car rentaling site
+
+## Technologies Used
+
+**Frontend**: React, Typescript, Tailwind CSS, Styled-Components
+<br />**Backend**: Node.js, NestJS, Express.js, GraphQL
 
 ## Setup to Run Locally
 
