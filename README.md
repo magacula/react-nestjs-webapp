@@ -1,4 +1,4 @@
-# MERN stack web application (React & Nest.js)
+# MERN stack web application (React & NestJS)
 
 > A full-stack application that serves as a car rental
 
@@ -11,7 +11,7 @@
 
 1. Deploying NestJS backend server
 
-- Navigate into to folder "nestjs-server" and run:
+- Navigate into folder "nestjs-server" and run:
 
 ```bash
 npm install             // to install dependencies
@@ -20,7 +20,7 @@ npm run start          // to start the development server
 
 2. Deploying React client
 
-- Navigate into to folder "react-client" and run:
+- Navigate into folder "react-client" and run:
 
 ```bash
 yarn install        // to install dependencies
