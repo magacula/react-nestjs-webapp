@@ -2,12 +2,12 @@
 
 > A full-stack application that serves as a car rental
 
-## Technologies Used
+## Technologies Used 💻
 
 **Frontend**: React, Typescript, Tailwind CSS, Styled-Components
 <br />**Backend**: Node.js, NestJS, Express.js, GraphQL
 
-## Setup to Run Locally
+## How to Setup and Run Locally 🏃‍♂️🏃‍♀️
 
 1. Deploying NestJS backend server
 
