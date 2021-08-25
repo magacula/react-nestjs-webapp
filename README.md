@@ -11,7 +11,7 @@
 
 1. Deploying NestJS backend server
 
-   - Navigate into folder "nestjs-server" and run:
+   - Navigate into "nestjs-server" folder and run:
 
 ```bash
 npm install             // to install dependencies
@@ -20,7 +20,7 @@ npm run start          // to start the development server
 
 2. Deploying React client
 
-   - Navigate into folder "react-client" and run:
+   - Navigate into "react-client" folder and run:
 
 ```bash
 yarn install        // to install dependencies
