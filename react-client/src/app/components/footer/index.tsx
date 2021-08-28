@@ -266,7 +266,8 @@ function Footer() {
       </FooterContainer>
       <ButtomContainer>
         <CopyRightText>
-          CopyRight &copy; 2021 SFCarRental. All rights reserved.
+          CopyRight &copy; {new Date().getFullYear()} SFCarRental. All rights
+          reserved.
         </CopyRightText>
       </ButtomContainer>
     </>
