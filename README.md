@@ -4,8 +4,8 @@
 
 ## Technologies Used 💻
 
-<ins>**Frontend**</ins>: React, Typescript, TailwindCSS, Styled-Components, GraphQL
-<br /><ins>**Backend**</ins>: Node.js, NestJS, Express.js, MySQL
+<ins>**Languages**</ins>: JavaScript, Typescript, GraphQL, MySQL
+<br /><ins>**Frameworks / Libraries**</ins>: React, TailwindCSS, Styled-Components, Node.js, NestJS, Express.js,
 <br /><ins>**Platform**</ins>: Docker
 
 ## How to Setup and Run Locally 🏃‍♂️🏃‍♀️
