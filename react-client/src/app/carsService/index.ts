@@ -10,7 +10,8 @@ class CarService {
         throw err;
       });
 
-    if (res && res.data) return res.data as GetCarsFromServer_getCars[];
+    if (res && res.data && res.data.getCars)
+      return res.data.getCars as GetCarsFromServer_getCars[];
 
     return [];
   }
