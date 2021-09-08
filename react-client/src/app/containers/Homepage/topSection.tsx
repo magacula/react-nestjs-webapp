@@ -4,6 +4,7 @@ import tw from "twin.macro";
 import { SCREENS } from "../../components/responsive/index";
 
 import MclarenCarImg from "../../../assets/mclaren-orange-big.png";
+import PorsheCarImg from "../../../assets/porche.png";
 import BlobImg from "../../../assets/blob.svg";
 import { Button } from "../../components/button";
 

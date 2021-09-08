@@ -1,5 +1,5 @@
-import { GetCarsFromServer } from "../../carsService/__generated__/GetCarsFromServer";
+import { GetCarsFromServer_getCars } from "../../carsService/__generated__/GetCarsFromServer";
 
 export interface IHomePageState {
-  topCars: GetCarsFromServer[];
+  topCars: GetCarsFromServer_getCars[];
 }
