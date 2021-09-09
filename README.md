@@ -4,9 +4,11 @@
 
 ## Technologies Used 💻
 
-<ins>**Languages**</ins>: JavaScript, Typescript, GraphQL, MySQL
-<br /><ins>**Frameworks / Libraries**</ins>: React, TailwindCSS, Styled-Components, Node.js, NestJS, Express.js,
-<br /><ins>**Platform**</ins>: Docker
+<ins>**Frontend**</ins>: Typescript, JavaScript, GraphQL
+<br />
+<ins>**Backend**</ins>: Node.js, MySQL
+<br /><ins>**Frameworks / Libraries**</ins>: React/Redux, Tailwind CSS, Styled-Components, NestJS, Express.js
+<br /><ins>**Deployment**</ins>: Docker, Hostinger VPS
 
 ## How to Setup and Run Locally 🏃‍♂️🏃‍♀️
 
