@@ -14,7 +14,8 @@ export default {
   },
   bmCrossButton: {
     height: "24px",
-    width: "24px",
+    width: "24px ",
+    transform: "scale(1.25)",
   },
   bmCross: {
     background: "#bdc3c7",

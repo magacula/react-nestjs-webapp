@@ -14,6 +14,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Dispatch } from "redux";
 import { createSelector } from "reselect";
 import { makeSelectTopCars } from "./selectors";
+import MoonLoader from "react-spinners/MoonLoader";
 
 const TopCarsContainer = styled.div`
   ${tw`
@@ -66,6 +67,18 @@ const EmptyCars = styled.div`
   `}
 `;
 
+const LoadingContainer = styled.div`
+  ${tw`
+    w-full
+    flex
+    justify-center
+    items-center
+    text-base
+    text-black
+    mt-9
+  `}
+`;
+
 // Dispatching action from TopCars Component
 const actionDispatch = (dispatch: Dispatch) => ({
   setTopCars: (cars: GetCarsFromServer_getCars[]) => dispatch(setTopCars(cars)),
@@ -77,6 +90,7 @@ const stateSelector = createSelector(makeSelectTopCars, (topCars) => ({
 
 export const TopCars = () => {
   const [current, setCurrent] = useState(0);
+  const [isLoading, setLoading] = useState(false);
 
   const isMobile = useMediaQuery({ maxWidth: SCREENS.sm });
 
@@ -84,35 +98,15 @@ export const TopCars = () => {
   const { setTopCars } = actionDispatch(useDispatch());
 
   const fetchTopCars = async () => {
+    setLoading(true);
     const res = await carsService.getCars().catch((err) => {
       console.log("Error: " + err);
     });
     console.log(res);
 
     if (res) setTopCars(res);
+    setLoading(false);
   };
-
-  // const testCar1: ICar = {
-  //   name: "Audi S3 Car",
-  //   mileage: "10k",
-  //   thumbnailSrc:
-  //     "https://cdn.jdpower.com/Models/640x480/2017-Audi-S3-PremiumPlus.jpg",
-  //   dailyPrice: 70,
-  //   monthlyPrice: 1600,
-  //   gearType: "Auto",
-  //   gas: "Petrol",
-  // };
-
-  // const testCar2: ICar = {
-  //   name: "Honda City 5 Seater Car",
-  //   mileage: "20k",
-  //   thumbnailSrc:
-  //     "https://shinewiki.com/wp-content/uploads/2019/11/honda-city.jpg",
-  //   dailyPrice: 50,
-  //   monthlyPrice: 1500,
-  //   gearType: "Auto",
-  //   gas: "Petrol",
-  // };
 
   const isEmptyTopCars = !topCars || topCars.length === 0;
 
@@ -137,7 +131,12 @@ export const TopCars = () => {
   return (
     <TopCarsContainer>
       <Title>Explore Our Top Deals</Title>
-      {!isEmptyTopCars ? (
+      {isLoading && (
+        <LoadingContainer>
+          <MoonLoader loading />
+        </LoadingContainer>
+      )}
+      {!isEmptyTopCars && !isLoading ? (
         <CarsContainer>
           <Carousel
             value={current}
@@ -182,7 +181,7 @@ export const TopCars = () => {
           />
         </CarsContainer>
       ) : (
-        <EmptyCars>No Top Cars are shown..</EmptyCars>
+        <EmptyCars>No Top Cars are shown...</EmptyCars>
       )}
     </TopCarsContainer>
   );
