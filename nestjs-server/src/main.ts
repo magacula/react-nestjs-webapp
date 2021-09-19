@@ -10,7 +10,7 @@ async function bootstrap() {
   const express = require('express');
 
   // Have Node.js (express) serve the build files from our built React app
-  app.use(express.static(path.resolve(__dirname, '../../react-client/build')));
+  app.use(express.static(path.resolve(__dirname, '../build')));
 
   // enables Cross-Origin Resource Sharing (allows communication w/ frontend)
   app.enableCors();

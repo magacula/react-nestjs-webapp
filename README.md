@@ -8,7 +8,7 @@
 <br />
 <ins>**Backend**</ins>: Node.js, Express.js, MySQL
 <br /><ins>**Frameworks / Libraries**</ins>: React/Redux, Tailwind CSS, Styled-Components, NestJS
-
+<br /><ins>**Deployment**</ins>: Heroku
 
 ## How to Setup and Run Locally 🏃‍♂️🏃‍♀️
 
