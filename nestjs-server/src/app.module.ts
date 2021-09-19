@@ -5,6 +5,9 @@ import { ConfigModule } from '@nestjs/config';
 import { DatabaseModule } from './database/database.module';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ComponentsModule } from './components/components.module';
+import { ServeStaticModule } from '@nestjs/serve-static';
+import { join } from 'path';
+import { TypeOrmModule } from '@nestjs/typeorm';
 
 // Order matter for imports:
 // Have to add "ConfigModule.forRoot()" before the DatabaseModule in imports

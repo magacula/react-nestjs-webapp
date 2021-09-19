@@ -19,6 +19,7 @@
     "@types/redux-logger": "^3.0.9",
     "cra-template-redux-typescript": "1.0.2",
     "express": "^4.17.1",
+    "global": "^4.4.0",
     "graphql": "^15.5.2",
     "react": "^17.0.2",
     "react-burger-menu": "^3.0.6",
@@ -37,13 +38,13 @@
     "typescript": "^4.3.5"
   },
   "scripts": {
-    "start": "PORT=1234 craco start",
+    "start": "craco start",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "schema:download": "npx apollo service:download --endpoint=http://localhost:3000/graphql ./src/app/graphql-schema.json",
+    "schema:download": "npx apollo service:download --endpoint=http://localhost:9000/graphql ./src/app/graphql-schema.json",
     "schema:generate-watch": "npx apollo codegen:generate --localSchemaFile=./src/app/graphql-schema.json --target=typescript --tagName=gql --watch",
-    "start:prod": "node ./server.js"
+    "heroku-prebuild": "yarn install --prefix ./react-client && npm install --prefix ./nestjs-server"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -62,8 +63,10 @@
   },
   "devDependencies": {
     "@types/react-dom": "^17.0.8",
-    "@types/styled-components": "^5.1.11",
+    "@types/styled-components": "^5.1.14",
     "autoprefixer": "^9",
-    "postcss": "^7"
-  }
+    "postcss": "^7",
+    "webpack-cli": "^4.8.0"
+  },
+  "proxy": "http://localhost:9000"
 }
